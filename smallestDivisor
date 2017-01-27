@@ -1,0 +1,12 @@
+export const smallestDivisor = (a) => {
+  const iter = (acc) => {
+    if (acc > a/2) {
+      return a;
+    }
+   if (a % acc === 0) {
+     return acc;
+   }
+   return iter(acc + 1);
+  };
+  return iter(2);
+};
