@@ -1,0 +1,2 @@
+# SmallestDivisor
+Find smallest divisor
