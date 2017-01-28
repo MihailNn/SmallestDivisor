@@ -1,0 +1,13 @@
+smallestDivisor = (a) => {
+  if (a <= 0) {
+    return NaN;
+  }
+  if (a === 1) {
+    return a;
+  }
+  let divisor = 2;
+  while (a % divisor !== 0) {
+    divisor = divisor + 1;
+  }
+  return divisor;
+};
